@@ -5,7 +5,7 @@
 </block>
 <block wx:else>
   <scroll-view style="height: 100%;" scroll-y="true" class="container film-list" bindscroll="scroll" bindscrolltolower="scrolltolower">
-    <block wx:for-items="{{films}}" wx:for-item="film">
+    <block wx:for-items="{{films}}" wx:for-item="film" wx:key="*film">
       <view class="film-item" bindtap="viewDetail" data-id="{{film.id}}" data-title="{{film.title}}">
         <view class="film-image">
           <image src="{{film.images.medium}}"></image>
@@ -26,13 +26,13 @@
           </view>
           <view class="directors">
             <text class="label">导演</text>
-            <block wx:for-items="{{film.directors}}" wx:for-item="director">
+            <block wx:for-items="{{film.directors}}" wx:for-item="director" wx:key="*director">
               <text class="person">{{director.name}}</text>
             </block>
           </view>
           <view class="casts">
             <text class="label">主演</text>
-            <block wx:for-items="{{film.casts}}" wx:for-item="cast">
+            <block wx:for-items="{{film.casts}}" wx:for-item="cast" wx:key="*cast">
               <text class="person">{{cast.name}}</text>
             </block>
           </view>

@@ -1,8 +1,16 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/douban/in_theathers/in_theathers",
     "pages/douban/coming_soon/coming_soon",
-    "pages/douban/detail/detail"
+    "pages/douban/detail/detail",
+    "pages/warn/index",
+    "pages/scanresult/index",
+    "pages/billing/index",
+    "pages/my/index",
+    "pages/wallet/index",
+    "pages/charge/index",
+    "pages/logs/logs"
   ],
   "tabBar": {
     "color": "#666",
